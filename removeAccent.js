@@ -1,5 +1,5 @@
 function removeAccent(str) {
-    // Add your solution here!
+  return str.normalize('NFD').replace(/\p{Diacritic}/gu, '');
 }
 
 module.exports = removeAccent;
